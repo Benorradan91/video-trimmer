@@ -68,10 +68,5 @@ Then open [http://localhost:5173](http://localhost:5173) in your browser.
 - You can replace the video file in the `public` folder or change the source in `VideoPlayer.jsx`.
 - If the requested video file does not exist, the default video will be used.
 
-## Troubleshooting
-
-### EPERM: operation not permitted, rmdir ...\node_modules\.vite\deps
-
-If you get a permission error like:
 
 
