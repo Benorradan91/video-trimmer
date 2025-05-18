@@ -1,0 +1,104 @@
+.video-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 32px;
+  width: 900px;
+  max-width: 100vw;
+}
+
+.video-player video {
+  max-width: 100%;
+  border: 2px solid #333;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  outline: none;
+  margin-bottom: 18px;
+}
+
+.video-player .play-pause-btn {
+  background: none !important;
+  box-shadow: none !important;
+  border: none;
+  outline: none;
+  padding: 0;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.video-player .play-pause-btn:hover {
+  background: none !important;
+  box-shadow: none !important;
+  transform: scale(1.07);
+}
+
+/* Hide native controls */
+.video-player video::-webkit-media-controls {
+  display: none !important;
+}
+.video-player video::-moz-media-controls {
+  display: none !important;
+}
+.video-player video::-ms-media-controls {
+  display: none !important;
+}
+.video-player video::-o-media-controls {
+  display: none !important;
+}
+.video-player video::media-controls {
+  display: none !important;
+}
+
+/* Custom controls container */
+.custom-controls {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  /* Remove margin-bottom for absolute positioning */
+  margin-bottom: 0;
+}
+
+.custom-controls button {
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.custom-controls button:hover {
+  background: #444;
+}
+
+.timeline {
+  width: 600px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 5px;
+  position: relative;
+}
+
+.trim-bar {
+  width: 600px;
+  height: 40px;
+  background-color: #f0f0f0;
+  border: 2px dashed #888;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.play-pause-btn:hover {
+  background: #1976d2 !important;
+  box-shadow: 0 4px 16px rgba(33,150,243,0.18);
+  transform: scale(1.07);
+}
