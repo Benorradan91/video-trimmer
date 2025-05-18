@@ -11,7 +11,6 @@ It allows you to load a video, preview it, and visually select a trim range usin
 - Timeline seeking only within the selected trim range
 - Responsive and modern UI
 - **Choose video file via URL parameter**
-- **Unit tests for main components**
 
 ## Getting Started
 
@@ -22,37 +21,19 @@ It allows you to load a video, preview it, and visually select a trim range usin
 
 ### Installation
 
-[Click to copy: `npm install`](#)
+[![Run npm install](https://img.shields.io/badge/Run-npm%20install-blue?logo=npm)](javascript:copy('npm install'))
 ```bash
 npm install
 ```
 
 ### Running the App
 
-[Click to copy: `npm run dev`](#)
+[![Run npm run dev](https://img.shields.io/badge/Run-npm%20run%20dev-blue?logo=npm)](javascript:copy('npm run dev'))
 ```bash
 npm run dev
 ```
 
 Then open [http://localhost:5173](http://localhost:5173) in your browser.
-
-## Running Tests
-
-This project uses [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/) for unit tests.
-
-[Click to copy: `npm test`](#)
-```bash
-npm test
-```
-
-Or, if you use yarn:
-
-[Click to copy: `yarn test`](#)
-```bash
-yarn test
-```
-
-Test files are located in `src/components/tests/` (e.g. `src/components/tests/Timeline.test.jsx`, `src/components/tests/TrimBar.test.jsx`).
 
 ## Usage
 
@@ -80,7 +61,6 @@ Test files are located in `src/components/tests/` (e.g. `src/components/tests/Ti
 - `src/components/Timeline.jsx` - Timeline with thumbnails and trim bar
 - `src/components/TrimBar.jsx` - Draggable trim bar handles
 - `src/styles/VideoPlayer.css`, `src/styles/Timeline.css` - Styling
-- `src/components/tests/Timeline.test.jsx`, `src/components/tests/TrimBar.test.jsx` - Unit tests
 
 ## Notes
 
@@ -88,48 +68,10 @@ Test files are located in `src/components/tests/` (e.g. `src/components/tests/Ti
 - You can replace the video file in the `public` folder or change the source in `VideoPlayer.jsx`.
 - If the requested video file does not exist, the default video will be used.
 
-## Deploying to GitHub
+## Troubleshooting
 
-To push your project to GitHub:
+### EPERM: operation not permitted, rmdir ...\node_modules\.vite\deps
 
-1. [Create a new repository on GitHub](https://github.com/new).
-2. Open a terminal in your project folder.
-3. If you see `fatal: not a git repository`, run:
-
-   ```bash
-   git init
-   ```
-
-4. Add all files:
-
-   ```bash
-   git add .
-   ```
-
-5. Commit your changes:
-
-   ```bash
-   git commit -m "Initial commit"
-   ```
-
-6. **Add your GitHub repository as a remote:**
-
-   ```bash
-   git remote add origin https://github.com/Benorradan91/video-trimmer.git
-   ```
-
-7. Push to GitHub:
-
-   ```bash
-   git push -u origin master
-   ```
-
-   If you use `main` as your default branch, use:
-
-   ```bash
-   git push -u origin main
-   ```
-
-Now your project is on GitHub!
+If you get a permission error like:
 
 
