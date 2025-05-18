@@ -21,14 +21,14 @@ It allows you to load a video, preview it, and visually select a trim range usin
 
 ### Installation
 
-[![Run npm install](https://img.shields.io/badge/Run-npm%20install-blue?logo=npm)](javascript:copy('npm install'))
+[![Run npm install](https://img.shields.io/badge/Run-npm%20install-blue?logo=npm)]
 ```bash
 npm install
 ```
 
 ### Running the App
 
-[![Run npm run dev](https://img.shields.io/badge/Run-npm%20run%20dev-blue?logo=npm)](javascript:copy('npm run dev'))
+[![Run npm run dev](https://img.shields.io/badge/Run-npm%20run%20dev-blue?logo=npm)]
 ```bash
 npm run dev
 ```
